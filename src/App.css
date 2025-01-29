@@ -1,0 +1,97 @@
+/* 🌍 Globale stiler */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* 🎨 Header */
+header {
+  background-color: #b71c1c; /* Brann-rød */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  color: white;
+  margin: 0;
+}
+
+/* 📌 Navigasjon */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* 🔲 Kortdesign */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* 🏠 Grid-layout for kort */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin: 20px 0;
+}
+
+/* 🔘 Knappestiler */
+.btn {
+  background-color: #b71c1c;
+  color: white;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #9a1313;
+  transform: scale(1.05);
+}
+
+/* 🔄 Responsiv layout */
+@media screen and (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+}
