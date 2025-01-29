@@ -1,22 +1,11 @@
-import React from 'react';
+import React from "react";
 
 function CalendarPage() {
   return (
-    <div className="container">
-      <h2>Kalender</h2>
-      <p>Her finner du kommende arrangementer.</p>
-
-      <button className="button">Legg til i kalender</button>
-
-      <div className="card">
-        <h3>Kommende kamp</h3>
-        <p>Brann vs. Rosenborg - Lørdag kl. 18:00</p>
-      </div>
-
-      <div className="card">
-        <h3>Treningsøkt</h3>
-        <p>Åpen trening for fans på Stadion</p>
-      </div>
+    <div className="fade-in card">
+      <h2 className="text-2xl font-bold text-red-600">Kalender</h2>
+      <p className="text-gray-700 mb-4">Her finner du kommende arrangementer.</p>
+      <button className="fade-in">Legg til i kalenderen</button>
     </div>
   );
 }
